@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semantic Tags Example</title>
 </head>
 <body>
-    <h1>Gargi</h1>
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This section contains information about us.</p>
+        </section>
+        <article>
+            <h2>Latest News</h2>
+            <p>This is an independent article.</p>
+        </article>
+        <audio controls>
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br><br>
+        <video width="300" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <br><br>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;">
+            Your browser does not support the canvas element.
+        </canvas>
+
+    </main>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 100, 50);
+    </script>
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
 </body>
 </html>
